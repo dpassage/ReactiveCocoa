@@ -254,6 +254,9 @@ Disposing of the subscription to a signal representing a file upload, for
 example, would cancel any in-flight network request, and free the file data from
 memory.
 
+As a corrolary to the above, disposables can be used to ensure that resources
+are retained until the signal has finished completing.
+
 ## Best practices
 
 The following recommendations are intended to help keep RAC-based code
